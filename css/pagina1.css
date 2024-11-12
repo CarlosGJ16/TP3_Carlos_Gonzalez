@@ -1,0 +1,57 @@
+@import "principal.css"; /* Importa estilos de principal.css */
+
+/* Estilos para la tabla de autos */
+.tabla-autos {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-autos th, .tabla-autos td {
+    border: 1px solid #444; /* Borde oscuro para mayor contraste */
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-autos th {
+    background-color: #333; /* Fondo oscuro para encabezados */
+    color: #ffcc00; /* Texto en amarillo claro */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.tabla-autos tr:nth-child(even) {
+    background-color: #444; /* Fondo oscuro para filas pares */
+    color: #ddd; /* Texto claro */
+}
+
+.tabla-autos tr:nth-child(odd) {
+    background-color: #555; /* Fondo ligeramente más oscuro para filas impares */
+    color: #ddd;
+}
+
+.tabla-autos tr:hover {
+    background-color: #666; /* Fondo gris claro en hover */
+    color: #fff; /* Texto blanco para mayor contraste */
+}
+
+/* Ajustes adicionales para imagen */
+.img-movimiento {
+    width: 250px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin: 20px 0;
+    animation: deslizar 3s ease-in-out infinite;
+}
+
+/* Ajuste de márgenes en el header, nav y footer */
+header, nav, footer {
+    margin: 20px 0;
+}
+
+
+

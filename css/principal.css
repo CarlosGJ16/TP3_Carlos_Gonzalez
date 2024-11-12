@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222; /* Fondo oscuro para darle un aspecto elegante */
+    color: #ddd; /* Texto claro para contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+header {
+    margin: 30px 0;
+    text-align: center;
+}
+
+header h1.animado {
+    animation: moverTexto 11s ease-in-out infinite; /* Cambiar la animación */
+    font-size: 2.5em;
+    color: #ffcc00; /* Amarillo para un aspecto llamativo */
+    font-weight: bold;
+}
+
+/* Animación de movimiento del texto */
+@keyframes moverTexto {
+    0% { transform: translateX(-50%); }
+    50% { transform: translateX(50%); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Imagen en movimiento */
+.img-movimiento {
+    width: 350px;
+    height: auto;
+    margin: 20px 0;
+    animation: deslizar 4s ease-in-out infinite;
+    border: 5px solid #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar efecto de elevación */
+}
+
+/* Animación de deslizamiento */
+@keyframes deslizar {
+    from { transform: translateX(-10px); }
+    to { transform: translateX(10px); }
+}
+
+/* Navegación */
+nav {
+    margin: 20px 0;
+}
+
+.boton {
+    background-color: #0056b3; /* Azul */
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambio a amarillo al pasar el mouse encima */
+.boton:hover {
+    background-color: #ff9900; /* Amarillo */
+    transform: translateY(-3px);
+}
+
+/* Color lila al presionar */
+.boton:active {
+    background-color: #9b59b6; /* Lila */
+}
+
+/* Diseño del botón */
+.boton:focus {
+    outline: none; /* Elimina el contorno de enfoque predeterminado */
+}
+
+/* Sección de descripción */
+section {
+    max-width: 800px;
+    text-align: left;
+    margin: 20px;
+    padding: 25px;
+    background-color: #333; /* Fondo oscuro */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Pie de página */
+footer {
+    margin: 30px 0;
+    font-size: 0.9em;
+    color: #888;
+    text-align: center;
+}
+
+
+

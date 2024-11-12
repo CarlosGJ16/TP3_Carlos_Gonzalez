@@ -1,0 +1,88 @@
+@import "principal.css"; /* Importa estilos de principal.css */
+
+/* Estilos específicos para la galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+figure {
+    text-align: center;
+    width: 200px; /* Ajustado para que las imágenes no se vean tan pequeñas */
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregar sombra para un efecto elevado */
+}
+
+figure:hover {
+    transform: scale(1.05); /* Le da un pequeño efecto de zoom a la figura al pasar el mouse */
+}
+
+.img-animada {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.img-animada:hover {
+    transform: scale(1.1); /* Efecto de aumento de la imagen al pasar el mouse */
+    filter: brightness(1.2); /* Aumenta el brillo al pasar el mouse */
+}
+
+/* Estilo del pie de imagen */
+figcaption {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #e6e4dd; /* Texto amarillo para destacar */
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+/* Títulos y textos dentro de la galería */
+h2 {
+    font-size: 2em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 25px;
+    background-color: #333; /* Fondo oscuro similar al de la página principal */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra de la sección */
+    border-radius: 10px;
+}
+
+/* Estilo de la barra de navegación en la página 2 */
+nav {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+nav .boton {
+    background-color: #0056b3; /* Azul */
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav .boton:hover {
+    background-color: #ff9900; /* Amarillo */
+    transform: translateY(-3px);
+}
+
+nav .boton:active {
+    background-color: #9b59b6; /* Lila */
+}
+
+
+
