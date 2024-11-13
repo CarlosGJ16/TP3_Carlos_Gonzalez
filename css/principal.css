@@ -60,20 +60,24 @@ nav {
     text-decoration: none;
     border-radius: 25px;
     margin: 0 10px;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
     font-size: 1.1em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
 }
 
-/* Cambio a amarillo al pasar el mouse encima */
+/* Animación al pasar el mouse (expansión) */
 .boton:hover {
     background-color: #ff9900; /* Amarillo */
-    transform: translateY(-3px);
+    transform: scale(1.1); /* Escala el botón para darle un efecto de expansión */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
 }
 
-/* Color lila al presionar */
+/* Animación al hacer clic (contracción) */
 .boton:active {
     background-color: #9b59b6; /* Lila */
+    transform: scale(0.95); /* Efecto de contracción al hacer clic */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Reduce la sombra */
 }
 
 /* Diseño del botón */
